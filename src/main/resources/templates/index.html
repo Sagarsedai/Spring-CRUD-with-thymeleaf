@@ -9,6 +9,9 @@
         .main{
             background: aqua;
         }
+        .card{
+            height: 40vh ;
+        }
     </style>
 </head>
 <body class="main">
@@ -18,7 +21,7 @@
             <a class="btn btn-primary" href="/add">Add Product</a>
         </div>
         <div class="row">
-            <div th:each="product : ${products}" class="col-md-4">
+            <div th:each="product : ${products}" class="col-md-4 mb-2">
                 <div class="card">
                     <div class="card-body">
                         <h5 class="card-title" th:text="${product.heading}"></h5>
